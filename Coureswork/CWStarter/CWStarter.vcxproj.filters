@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{89AF369E-F58E-B539-FEA6-40106A051C9B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{2DAB880B-99B4-887C-2230-9F7C8E38947C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\SFMLDebugDraw.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SensorContactListener.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dynamicBlock.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dynamicCircle.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\enemySensor.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\finishLineSensor.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\game.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\physicalObject.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\staticBlock.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\staticSensor.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\SFMLDebugDraw.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dynamicBlock.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\staticBlock.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dynamicCircle.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\enemySensor.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\finishLineSensor.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SensorContactListener.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\staticSensor.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
