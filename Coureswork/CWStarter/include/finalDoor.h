@@ -11,7 +11,9 @@ private:
 
 public:
 
+	FinalDoor() {};
 	FinalDoor(b2World* world, sf::Vector2f position, sf::Vector2f size, float orientation, sf::Color colour); //!< Complete contructor
+
 	void open();
 	bool m_open = false;
 };
