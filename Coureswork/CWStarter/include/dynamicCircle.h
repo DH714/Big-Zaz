@@ -18,7 +18,7 @@ class DynamicCircle : public sf::CircleShape, public PhysicalObject
 private:
 	bool m_stopped = false;
 
-	enum {RESPAWNING, RESPAWNED, WAITING} m_respawn;
+	enum {RESPAWNING, RESPAWNED} m_respawn;
 	
 public:
 	DynamicCircle() {}; //!< Default constructor
@@ -30,4 +30,5 @@ public:
 	void accel(b2Vec2 acc);//!< Apply force to the body
 	bool isStopped() const; //!< Has the circle stopped moving
 	void respawn();
+	bool m_respawning = false;
 };

@@ -39,6 +39,12 @@
     <ClInclude Include="include\staticSensor.h">
       <Filter>include</Filter>
     </ClInclude>
+    <ClInclude Include="include\rotatingDoor.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\finalDoor.h">
+      <Filter>include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\SFMLDebugDraw.cpp">
@@ -69,6 +75,12 @@
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="src\staticSensor.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="rotatingDoor.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\finalDoor.cpp">
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>

@@ -37,6 +37,7 @@ DynamicCircle::DynamicCircle(b2World * world, sf::Vector2f& position, float radi
 	setOrigin(radius, radius);
 	setRotation(orientation);
 	setFillColor(colour);
+
 }
 
 void DynamicCircle::update()
@@ -50,8 +51,8 @@ void DynamicCircle::update()
 		m_body->SetAngularVelocity(0.0f);
 	}
 
-	//b2Vec2 pos = m_body->GetPosition();
-	//setPosition(pos.x, pos.y);
+	b2Vec2 pos = m_body->GetPosition();
+	setPosition(pos.x, pos.y);
 
 
 
@@ -61,23 +62,14 @@ void DynamicCircle::update()
 
 	if (m_respawn == RESPAWNING)
 	{
-		setPosition(sf::Vector2f(-96, -2.f));
-		m_body->SetLinearVelocity(b2Vec2(0.f, 0.f));
-		m_respawn = WAITING;
-		b2Vec2 pos = b2Vec2(-96, -2.f);
-		setPosition(pos.x, pos.y);
+		m_respawning = true;
 
-
-	}
-	else if (m_respawn == WAITING)
-	{
-		sf::sleep(sf::milliseconds(1000));
 		m_respawn = RESPAWNED;
+
 	}
 	else
 	{ 
-		b2Vec2 pos = m_body->GetPosition();
-		setPosition(pos.x, pos.y);
+		m_respawning = false;
 	}
 }
 

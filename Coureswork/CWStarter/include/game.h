@@ -17,7 +17,7 @@
 //#include "openDoorSensor.h"
 //#include "closeDoorSensor.h"
 //#include "doorPressureSensor.h"
-//#include "rotatingDoor.h"
+#include "rotatingDoor.h"
 //#include "coneRampSensor.h"
 
 #include "SensorContactListener.h"
@@ -49,6 +49,8 @@ private:
 	
 	std::vector<EnemySensor> m_enemySensors;
 
+	std::vector<RotatingDoor> m_rotatingDoor;
+
 	SensorContactListener m_listener;
 
 
@@ -56,7 +58,7 @@ private:
 	SFMLDebugDraw m_debugDraw; //!< Box2D debug drawing
 	void toggleDebug() { m_debug = !m_debug; } //!< Toggle for debug drawing
 
-
+	float m_lives;
 
 public:
 	Game(); //!< Constructor which sets up the game
@@ -64,5 +66,7 @@ public:
 	void update(float timestep); //!< Update the game with give timestep
 	void draw(sf::RenderTarget &target, sf::RenderStates states) const; //!< Draw the game to the render context
 	void processKeyPress(sf::Keyboard::Key code); //!< Process user key press
+
+
 
 };

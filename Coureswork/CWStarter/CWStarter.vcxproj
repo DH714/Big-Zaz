@@ -95,6 +95,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="include\finalDoor.h" />
+    <ClInclude Include="include\rotatingDoor.h" />
     <ClInclude Include="include\SFMLDebugDraw.h" />
     <ClInclude Include="include\SensorContactListener.h" />
     <ClInclude Include="include\dynamicBlock.h" />
@@ -107,8 +109,10 @@
     <ClInclude Include="include\staticSensor.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="rotatingDoor.cpp" />
     <ClCompile Include="src\dynamicCircle.cpp" />
     <ClCompile Include="src\enemySensor.cpp" />
+    <ClCompile Include="src\finalDoor.cpp" />
     <ClCompile Include="src\finishLineSensor.cpp" />
     <ClCompile Include="src\SensorContactListener.cpp" />
     <ClCompile Include="src\SFMLDebugDraw.cpp" />
