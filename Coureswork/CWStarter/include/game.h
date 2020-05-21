@@ -12,7 +12,7 @@
 #include "dynamicCircle.h"
 #include "finishLineSensor.h"
 #include "enemySensor.h"
-
+#include "finalDoor.h"
 //#include "slidingDoor.h"
 //#include "openDoorSensor.h"
 //#include "closeDoorSensor.h"
@@ -43,8 +43,10 @@ private:
 	const b2Vec2 mk_gravity = b2Vec2(0.f, 9.81f); //!< No gravity - top down view
 
 	std::vector<StaticBlock> m_staticBlocks; //!< A collection of fixed blocks. 
+
 	DynamicCircle * m_ball; //!< Moving ball which functions as the player character
 	float m_ballDirection;
+
 	FinishLineSensor m_finish; //!< Creates the finish line to end the game once player has won
 	
 	std::vector<EnemySensor> m_enemySensors;
@@ -53,6 +55,7 @@ private:
 
 	SensorContactListener m_listener;
 
+	FinalDoor m_finaldoor;
 
 	bool m_debug = false; //!< Toggle for debug drawing
 	SFMLDebugDraw m_debugDraw; //!< Box2D debug drawing
